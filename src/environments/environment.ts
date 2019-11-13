@@ -1,11 +1,21 @@
 // This file can be replaced during build by using the `fileReplacements` array.
 // `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
+const API_KEY = 'AIzaSyApUId9bdS9ss7GYqiOKkOFidRN3wiElNU';
+const PROJECT_ID = 'afapp-3b55e';
+const AUTH_DOMAIN = 'afapp-3b55e.web.app'
 
 export const environment = {
-  production: false
+  production: false,
+  firebase: {
+    apiKey: API_KEY,
+    authDomain: AUTH_DOMAIN,
+    databaseURL: '<your-database-URL>',
+    projectId: PROJECT_ID,
+    storageBucket: '<your-storage-bucket>',
+    messagingSenderId: '<your-messaging-sender-id>'
+  }
 };
-
 /*
  * For easier debugging in development mode, you can import the following file
  * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.

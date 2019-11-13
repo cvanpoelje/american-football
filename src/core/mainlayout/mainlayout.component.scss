@@ -1,0 +1,23 @@
+// Layout for different devices gets handled here.
+.layout__wrapper {
+    display:grid;
+    grid-template-areas:    'header header header'
+                            'main   main   main  '
+                            'main   main   main  '
+                            'main   main   main  '
+                            'footer footer footer';
+    height: 100vh;
+}
+
+.layout__header {
+    grid-area: header;
+}
+
+.layout__main {
+    grid-area: main;
+    background:rgba(45, 185, 45, 0.719);
+}
+
+.layout__footer {
+    grid-area: footer;
+}
